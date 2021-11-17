@@ -1,7 +1,7 @@
 [CmdletBinding()]
-Param(
-  [Parameter(Mandatory = $False)]
-)
+#Param(
+#  [Parameter(Mandatory = $False)]
+#)
 
 
 $procid=get-process "Tomcat8" |select -expand id

@@ -5,7 +5,7 @@
     "parameters": {
       "ExportPath": {
         "description": "Please input the path to export the heap dump file",
-        "type": "Optional[String[1]]"
+        "type": "String[1]"
       }
     }
 }
