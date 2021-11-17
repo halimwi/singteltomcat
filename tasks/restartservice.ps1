@@ -4,6 +4,9 @@
 #)
 
 $lastrestart= (Get-EventLog -LogName "System" -Source "Service Control Manager" -EntryType "Information" -Message "*Tomcat*running*" -Newest 1).TimeGenerated;
-Write-Output("Tomcat service was last restart on $lastrestart") 
+Write-Output("Tomcat service was last restarted on $lastrestart")
+Write-Output("Restarting Tomcat Service") 
 restart-service -name Tomcat8
 get-service -name Tomcat8
+$lastrestart= (Get-EventLog -LogName "System" -Source "Service Control Manager" -EntryType "Information" -Message "*Tomcat*running*" -Newest 1).TimeGenerated;
+Write-Output("Tomcat service was last restarted on $lastrestart")
