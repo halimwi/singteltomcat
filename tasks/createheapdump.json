@@ -3,7 +3,7 @@
     "private": true,
     "input_method": "powershell",
     "parameters": {
-      "ExportPath": {
+      "exportpath": {
         "description": "Please input the path to export the heap dump file",
         "type": "String[1]"
       }
