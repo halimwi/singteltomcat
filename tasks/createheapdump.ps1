@@ -2,16 +2,16 @@
 Param(
   [Parameter(Mandatory = $False)]
  [String]
-  $Name 
+  $ExportPath 
 )
 
 $filepath=""
 #$Name="c:\temp"
 #write-output "first line"
-if ($Name -eq $null -or $Name -eq "") {
+if ($ExportPath -eq $null -or $ExportPath -eq "") {
   $filepath="c:\temp\heapdump$(get-date -f yyyyMMdd_HHmmss).hprof"
 } else {
- $filepath="$Name\newheapdump$(get-date -f yyyyMMdd_HHmmss).hprof"
+ $filepath="$ExportPath\newheapdump$(get-date -f yyyyMMdd_HHmmss).hprof"
 }
 
 $procid=get-process "Tomcat8" |select -expand id

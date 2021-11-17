@@ -1,0 +1,6 @@
+{
+    "description": "Restart Tomcat service",
+    "private": true,
+    "input_method": "powershell"
+}
+  
