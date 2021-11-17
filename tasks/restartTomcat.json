@@ -1,5 +1,5 @@
 {
-    "description": "Restart Tomcat service",
+    "description": "Restart Tomcat8 service",
     "private": true,
     "input_method": "powershell"
 }
